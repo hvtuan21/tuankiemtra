@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="qlsvModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sv">
+    <Key>
+      <PropertyRef Name="masv" />
+    </Key>
+    <Property Name="masv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tensv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ngaysinh" Type="DateTime" Precision="0" />
+    <Property Name="gioitinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="khoa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="diem1" Type="Double" />
+    <Property Name="diem2" Type="Double" />
+    <Property Name="diem3" Type="Double" />
+    <Property Name="diem4" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="qlsvEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sv" EntityType="Self.sv" />
+  </EntityContainer>
+</Schema>

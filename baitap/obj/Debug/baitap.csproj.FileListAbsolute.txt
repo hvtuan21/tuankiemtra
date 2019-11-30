@@ -1,0 +1,13 @@
+C:\Users\Admin\Desktop\c#\baitap\baitap\baitap\bin\Debug\baitap.exe.config
+C:\Users\Admin\Desktop\c#\baitap\baitap\baitap\bin\Debug\baitap.exe
+C:\Users\Admin\Desktop\c#\baitap\baitap\baitap\bin\Debug\baitap.pdb
+C:\Users\Admin\Desktop\c#\baitap\baitap\baitap\obj\Debug\baitap.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\c#\baitap\baitap\baitap\obj\Debug\baitap.Form1.resources
+C:\Users\Admin\Desktop\c#\baitap\baitap\baitap\obj\Debug\baitap.Properties.Resources.resources
+C:\Users\Admin\Desktop\c#\baitap\baitap\baitap\obj\Debug\baitap.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\c#\baitap\baitap\baitap\obj\Debug\baitap.exe
+C:\Users\Admin\Desktop\c#\baitap\baitap\baitap\obj\Debug\baitap.pdb
+C:\Users\Admin\Desktop\c#\baitap\baitap\baitap\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\c#\baitap\baitap\baitap\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\c#\baitap\baitap\baitap\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\c#\baitap\baitap\baitap\bin\Debug\EntityFramework.SqlServer.xml

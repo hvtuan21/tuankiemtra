@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="qlsvModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="sv">
+          <Key>
+            <PropertyRef Name="masv" />
+          </Key>
+          <Property Name="masv" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="tensv" Type="nvarchar" MaxLength="50" />
+          <Property Name="ngaysinh" Type="date" />
+          <Property Name="gioitinh" Type="nvarchar" MaxLength="50" />
+          <Property Name="khoa" Type="nvarchar" MaxLength="50" />
+          <Property Name="diem1" Type="float" />
+          <Property Name="diem2" Type="float" />
+          <Property Name="diem3" Type="float" />
+          <Property Name="diem4" Type="float" />
+        </EntityType>
+        <EntityContainer Name="qlsvModelStoreContainer">
+          <EntitySet Name="sv" EntityType="Self.sv" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="qlsvModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="sv">
+          <Key>
+            <PropertyRef Name="masv" />
+          </Key>
+          <Property Name="masv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="tensv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ngaysinh" Type="DateTime" Precision="0" />
+          <Property Name="gioitinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="khoa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="diem1" Type="Double" />
+          <Property Name="diem2" Type="Double" />
+          <Property Name="diem3" Type="Double" />
+          <Property Name="diem4" Type="Double" />
+        </EntityType>
+        <EntityContainer Name="qlsvEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="sv" EntityType="Self.sv" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="qlsvModelStoreContainer" CdmEntityContainer="qlsvEntities">
+          <EntitySetMapping Name="sv">
+            <EntityTypeMapping TypeName="qlsvModel.sv">
+              <MappingFragment StoreEntitySet="sv">
+                <ScalarProperty Name="masv" ColumnName="masv" />
+                <ScalarProperty Name="tensv" ColumnName="tensv" />
+                <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
+                <ScalarProperty Name="gioitinh" ColumnName="gioitinh" />
+                <ScalarProperty Name="khoa" ColumnName="khoa" />
+                <ScalarProperty Name="diem1" ColumnName="diem1" />
+                <ScalarProperty Name="diem2" ColumnName="diem2" />
+                <ScalarProperty Name="diem3" ColumnName="diem3" />
+                <ScalarProperty Name="diem4" ColumnName="diem4" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

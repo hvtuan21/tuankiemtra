@@ -1,0 +1,3 @@
+﻿dear thầy.
+Em làm phần bổ sung và nó thêm trực tiếp vào database luôn ạ.
+Nên e ko code phần lưu ạ
